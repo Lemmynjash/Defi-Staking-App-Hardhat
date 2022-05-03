@@ -1,0 +1,109 @@
+{
+  "id": "9157961799c30c4b92543d6122224e4d",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.8.3",
+  "solcLongVersion": "0.8.3+commit.8d00100c",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/Stacking.sol": {
+        "content": "//stake\n//withdraw\n//claim reward\n//---look for good reward mechanisam\n\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.3;\n\ncontract Stacking{\n\n\n}"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": false,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/Stacking.sol": {
+        "Stacking": {
+          "abi": [],
+          "evm": {
+            "bytecode": {
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220f5aa65cfc58a115c4d9faf50fcb7854035af4ebe305a3c6e4a34bc96599db25364736f6c63430008030033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CREATE2 0xAA PUSH6 0xCFC58A115C4D SWAP16 0xAF POP 0xFC 0xB7 DUP6 BLOCKHASH CALLDATALOAD 0xAF 0x4E 0xBE ADDRESS GAS EXTCODECOPY PUSH15 0x4A34BC96599DB25364736F6C634300 ADDMOD SUB STOP CALLER ",
+              "sourceMap": "129:22:0:-:0;;;;;;;;;;;;;;;;;;;"
+            },
+            "deployedBytecode": {
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea2646970667358221220f5aa65cfc58a115c4d9faf50fcb7854035af4ebe305a3c6e4a34bc96599db25364736f6c63430008030033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CREATE2 0xAA PUSH6 0xCFC58A115C4D SWAP16 0xAF POP 0xFC 0xB7 DUP6 BLOCKHASH CALLDATALOAD 0xAF 0x4E 0xBE ADDRESS GAS EXTCODECOPY PUSH15 0x4A34BC96599DB25364736F6C634300 ADDMOD SUB STOP CALLER ",
+              "sourceMap": "129:22:0:-:0;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Stacking.sol\":\"Stacking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Stacking.sol\":{\"keccak256\":\"0x1255961033c04348da5c89ce9b76375e0d6e6a404ba981aea083f01ad2b4987b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3456c3d90b724c9c924fb40e91ca83875e04c072dccf7b65a9a7211de08154a6\",\"dweb:/ipfs/Qmd1Vv4rmVCXQ2gd7anAiAvhfA2LW66q8t4mjZhFqQJtAH\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/Stacking.sol": {
+        "ast": {
+          "absolutePath": "contracts/Stacking.sol",
+          "exportedSymbols": {
+            "Stacking": [
+              2
+            ]
+          },
+          "id": 3,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.8",
+                ".3"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "104:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "fullyImplemented": true,
+              "id": 2,
+              "linearizedBaseContracts": [
+                2
+              ],
+              "name": "Stacking",
+              "nameLocation": "138:8:0",
+              "nodeType": "ContractDefinition",
+              "nodes": [],
+              "scope": 3,
+              "src": "129:22:0"
+            }
+          ],
+          "src": "104:47:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
