@@ -8,8 +8,8 @@ pragma solidity ^0.8.3;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-error Staking__TransferFailed();
-error Staking__NeedMoreThanZero();
+    error Staking__TransferFailed();
+    error Staking__NeedMoreThanZero();
 
 contract Staking {
     IERC20 public s_stackingToken;
